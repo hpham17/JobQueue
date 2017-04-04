@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hubert's Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="local-stylesheet.css">
+  </head>
+<div id="wrapper">
+
+  <div style="position: absolute; top: 0; left: 0; z-index: 1000;"><i style="display:none; color:white;" class="fa fa-times-circle fa-3x" aria-hidden="true"></i> </div>
+  <object class="resume hide slideInDown" data="images/resume.pdf" type="application/pdf" width="100%" height="100%">
+  <a href="/resume.html">Please click here if mobile</a>
+  </object>
+  <div id="menu">
+    <img src="images/hp_logo.png" alt="hp-logo" id="logo-test">
+    <div class="item1"><i class="fa fa-file-pdf-o fa-2x"></i></div>
+    <div class="item2"><i class="fa fa-smile-o fa-2x"></i></div>
+    <div class="item3"><i class="fa fa-code fa-2x"></i></div>
+    <div class="item4"><i class="fa fa-terminal fa-2x"></i></div>
+  </div>
+
+<!-- MODAL TERMINAL -->
+<div class="container">
+<div class="modal fade mymodal" id="modal-4" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"> <i class='fa fa-times'></i> </button>
+
+        <h4 class="modal-title" id="myModalLabel">Terminal</h4>
+      </div>
+      <div class="modal-body">
+        <div id="loader-wrapper">
+          <div class="console">
+          <span style="color: red">projecthubert.com</span>:~ <span style="color: blue">guest </span>$ <span class="line1"></span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="minmaxCon"></div>
+</div>
+<!-- END MODEL TERMINAL -->
+
+<!-- MODAL PROJECTS -->
+<div class="container">
+<div class="modal fade mymodal" id="modal-3" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"> <i class='fa fa-times'></i> </button>
+
+        <h4 class="modal-title" id="myModalLabel">Projects</h4>
+      </div>
+      <div class="modal-body">
+
+        <a href="http://mentorroom.herokuapp.com" target="_blank"><div class="image-holder"><h1 class="chatbox" data-toggle="tooltip" title="MentorRoom is a nonprofit organization that aims to connect students with mentors for free!">MentorRoom</h1></div></a>
+
+        <a href="http://esential-2016.herokuapp.com" target="_blank"><div class="image-holder"><h1 class="chatbox" data-toggle="tooltip" title="Esential aims to help borrowers whom are low-income and have bad credit by taking their tax refunds as collateral to take out low-interest rate loans.">Esential</h1></div></a>
+
+        <a href="http://chatbox-hubert.herokuapp.com" target="_blank"><div class="image-holder"><h1 class="chatbox" data-toggle="tooltip" title="ChatBox is a real-time chat application built using Pusher and React on Rails.">ChatBox</h1></div></a>
+
+      <a href="http://jukebox.projecthubert.com" target="_blank"><div class="image-holder">  <h1 class="chatbox" data-toggle="tooltip" title="JukeBox is exactly what it sounds like. It is something I built for fun using JavaScript.">JukeBox</h1></div></a>
+
+      <a href="http://lunchuxchallenge.herokuapp.com/" target="_blank"><div class="image-holder"><h1 class="chatbox" data-toggle="tooltip" title="LunchUX was my submission to a hackathon that aimed to digitalize the free and reduced lunch application for primary schools and secondary schools.">LunchUX</h1></div></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="minmaxCon"></div>
+</div>
+<!-- END MODEL PROJECTS -->
+
+<!-- MODAL ABOUTME -->
+<div class="container">
+<div class="modal fade mymodal" id="modal-2" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"> <i class='fa fa-times'></i> </button>
+
+        <h4 class="modal-title" id="myModalLabel">About Me</h4>
+      </div>
+      <div class="modal-body">
+        <p> Hello, my name is Hubert Pham. I am an undergraduate at UC Berkeley studying computer science. I love working with JavaScript and Ruby on Rails to make websites or create web applications.
+          <p> Please contact me at hubertpham@berkeley.edu.</p>
+        </p>
+        <p>*Disclaimer: I am still working on this website on my free time.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="minmaxCon"></div>
+</div>
+<!-- END MODEL ABOUTME -->
+
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+<script src="typed.js"></script>
+</body>
+</html>
