@@ -1,24 +1,23 @@
-# README
+# MassDrop Coding Assignment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running or Testing Locally
 
-Things you may want to cover:
+Clone repository and run    
+`bundle install` &
+`rake db:setup` &
+`rails s`
 
-* Ruby version
+In another terminal tab, run
+`bundle exec sidekiq`
 
-* System dependencies
+You also need Redis to be installed:
+[Installation Link](https://redis.io/topics/quickstart)    
+And the redis server to be running.
 
-* Configuration
+## Task
 
-* Database creation
+Create a job queue whose workers fetch data from a URL and store the results in a database.  The job queue should expose a REST API for adding jobs and checking their status / results.
 
-* Database initialization
+Example:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+User submits www.google.com to your endpoint.  The user gets back a job id. Your system fetches www.google.com (the result of which would be HTML) and stores the result.  The user asks for the status of the job id and if the job is complete, he gets a response that includes the HTML for www.google.com
