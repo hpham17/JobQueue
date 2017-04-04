@@ -1,0 +1,5 @@
+<% if @job.completed %>
+  <%= render :file => Rails.root.join('public', 'uploads', "#{@job.id}.txt").to_s %>
+<% else %>
+  "Loading.. not ready yet please refresh and try again in a moment."
+<% end %>
